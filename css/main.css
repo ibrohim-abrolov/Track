@@ -1,3 +1,9 @@
+:root {
+  --main-line-height: 24px;
+  --main-text-color: #000;
+  --main-bg-color: #dbf301;
+}
+
 /* plus-jakarta-sans-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -315,4 +321,98 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Plus Jakarta Sans", "Arial", sans-serif;
+  font-weight: 400;
+  background-image: url("/images/site-bg.svg");
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+.site-main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1334px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-header {
+  padding-top: 34px;
+}
+
+.site-header__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.nav__items:not(:last-child) {
+  margin-right: 105px;
+}
+
+.nav__link {
+  line-height: var(--main-line-height);
+  font-weight: 500;
+  color: var(--main-text-color);
+  text-decoration-line: none;
+  transition: color 0.4s ease;
+}
+
+.nav__link:hover {
+  opacity: 0.6;
+}
+
+.site-header__link {
+  line-height: var(--main-line-height);
+  font-weight: 500;
+  color: var(--main-text-color);
+  text-decoration-line: none;
+  transition: color 0.4s ease;
+}
+
+.site-header__link:hover {
+  opacity: 0.8;
+}
+
+.site-header__link:not(:last-child) {
+  margin-right: 24px;
+}
+
+.site-header__link--active {
+  padding: 14px 16px;
+  background-color: var(--main-bg-color);
+  border-radius: 10px;
 }/*# sourceMappingURL=main.css.map */
