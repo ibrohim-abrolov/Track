@@ -1,0 +1,60 @@
+@use "../variables";
+@use "../mixins";
+
+.hero {
+    padding-top: 229px;
+    padding-bottom: 277px;
+}
+
+.hero__textbox {
+    max-width: 850px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero__title {
+    margin-top: 0;
+    margin-bottom: 36px;
+    font-size: 58px;
+    line-height: 66px;
+    font-weight: 800;
+    color: var(--gray-900, #18181b); 
+}
+
+.hero__text {
+    margin-top: 0;
+    margin-bottom: 36px;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--main-text-color);
+}
+
+.hero__inner {
+    @include mixins.flexbox(row, center, center);
+}
+
+.hero__link {
+    margin-bottom: 360px;
+    padding: 14px 20px;
+    line-height: var(--main-line-height);
+    font-weight: 500;
+    color: var(--main-text-color);
+    background-color: rgba(163, 150, 150, 0.00);
+    border: 1px solid #dbf301;
+    border-radius: 10px;
+    text-decoration-line: none;
+    transition: background-color 0.4s ease;
+}
+
+.hero__link:not(:last-child) {
+    margin-right: 21px;
+}
+
+.hero__link:hover {
+    background-color: #dbf301;
+}
+
+.hero__brands-wrapper {
+    @include mixins.flexbox(row, center, space-around);
+}

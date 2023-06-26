@@ -48,6 +48,11 @@
 
 .site-header__link--active {
     padding: 14px 16px;
-    background-color: var(--main-bg-color);
+    background-color: rgba(163, 150, 150, 0.00);
+    border: 1px solid #dbf301;
     border-radius: 10px;
+}
+
+.site-header__link--active:hover {
+    background-color: #dbf301;
 }
