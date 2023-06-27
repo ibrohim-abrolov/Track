@@ -1,3 +1,76 @@
 @use "../variables";
 @use "../mixins";
 
+.service {
+    padding-bottom: 228px;
+}
+
+.service__span {
+    display: block;
+    margin-bottom: 101px;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: var(--main-text-color);
+}
+
+.service__list {
+    @include mixins.flexbox(row, center, space-between);
+    flex-wrap: wrap;
+    @include mixins.list-reset;
+}
+
+.service__items {
+    padding-right: 54px;
+}
+
+.service__items--initial {
+    padding-bottom: 85px;
+}
+
+.service__items--third {
+    padding-right: 0;
+    padding-bottom: 85px;
+}
+
+.service__items--initial {
+    background-image: url("/images/middle-line.svg");
+    background-repeat: no-repeat;
+    background-size: 1296px 0px;
+}
+
+.service__items--last {
+    padding-top: 60px;
+}
+
+.service__items--active {
+    padding-top: 60px;
+    padding-right: 0;
+}
+
+.service__img {
+    margin-right: auto;
+    margin-bottom: 42px;
+    margin-left: auto;
+}
+
+.service__textbox {
+    max-width: 330px;
+    width: 100%;
+    text-align: center;
+}
+
+.service__title {
+    margin-top: 0;
+    margin-bottom: 22px;
+    font-size: 21px;
+    line-height: 28px;
+    font-weight: 500;
+    color: var(--main-text-color);
+}
+
+.service__text {
+    margin: 0;
+    line-height: 26px;
+    color: var(--gray-600, #52525b);
+}
