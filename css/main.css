@@ -772,4 +772,138 @@ img {
   font-style: normal;
   line-height: 24px;
   color: var(--base-02, #090914);
+}
+
+.price {
+  padding-bottom: 102px;
+}
+
+.price__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.price__textbox {
+  max-width: 550px;
+  width: 100%;
+}
+
+.price__heading {
+  margin: 0;
+  font-size: 42px;
+  line-height: 56px;
+  font-weight: 600;
+  color: var(--main-text-color);
+}
+
+.price__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.price__items {
+  padding: 31px 65px 47px 65px;
+  border: 1px solid #e5eaf1;
+  background-color: #fff;
+  border-radius: 12px;
+  transition: background-color 0.4s ease, all 0.4s ease;
+}
+
+.price__items:hover {
+  background-color: #485aff;
+  color: #fff;
+}
+
+.price__items:not(:last-child) {
+  margin-right: 66px;
+}
+
+.price__title {
+  margin-top: 0;
+  margin-bottom: 2px;
+  font-size: 21px;
+  line-height: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: #0f172a;
+  letter-spacing: -0.3px;
+  transition: color 0.4s ease;
+}
+
+.price__title:hover {
+  color: #fff;
+}
+
+.price__text {
+  margin-top: 0;
+  margin-bottom: 24px;
+  line-height: 26px;
+  text-align: center;
+  color: #4b5262;
+  transition: color 0.4s ease;
+}
+
+.price__text:hover {
+  color: #fff;
+}
+
+.price__bold {
+  display: block;
+  padding-bottom: 20px;
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 700;
+  text-align: center;
+  color: #0f172a;
+  letter-spacing: -2px;
+}
+
+.price__inner-list {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+  margin-bottom: 35px;
+}
+
+.price__inner-items:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.price__inner-link {
+  display: block;
+  line-height: 26px;
+  text-align: center;
+  color: #0f172a;
+  text-decoration-line: none;
+  opacity: 0.9;
+}
+
+.price__link-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.price__link {
+  padding: 16px 50px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #485aff;
+  border-radius: 8px;
+  text-decoration-line: none;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.price__link:hover {
+  background-color: #fff;
+  color: #485aff;
 }/*# sourceMappingURL=main.css.map */
