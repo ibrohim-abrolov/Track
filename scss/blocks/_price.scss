@@ -32,6 +32,8 @@
     border: 1px solid #e5eaf1;
     background-color: #fff;
     border-radius: 12px;
+    -webkit-transition: background-color 0.4s ease, all 0.4s ease;
+    -o-transition: background-color 0.4s ease, all 0.4s ease;
     transition: background-color 0.4s ease, all 0.4s ease;
 }
 
@@ -53,6 +55,8 @@
     text-align: center;
     color: #0f172a;
     letter-spacing: -0.3px;
+    -webkit-transition: color 0.4s ease;
+    -o-transition: color 0.4s ease;
     transition: color 0.4s ease;
 }
 
@@ -66,6 +70,8 @@
     line-height: 26px;
     text-align: center;
     color: #4b5262;
+    -webkit-transition: color 0.4s ease;
+    -o-transition: color 0.4s ease;
     transition: color 0.4s ease;
 }
 
@@ -98,7 +104,8 @@
     line-height: 26px;
     text-align: center;
     color: #0f172a;
-    text-decoration-line: none;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
     opacity: 0.9;
 }
 
@@ -113,7 +120,10 @@
     color: #fff;
     background-color: #485aff;
     border-radius: 8px;
-    text-decoration-line: none;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+    -webkit-transition: background-color 0.4s ease, color 0.4s ease;
+    -o-transition: background-color 0.4s ease, color 0.4s ease;
     transition: background-color 0.4s ease, color 0.4s ease;
 }
 

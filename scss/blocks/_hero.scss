@@ -43,7 +43,10 @@
     background-color: rgba(163, 150, 150, 0.00);
     border: 1px solid #dbf301;
     border-radius: 10px;
-    text-decoration-line: none;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+    -webkit-transition: background-color 0.4s ease;
+    -o-transition: background-color 0.4s ease;
     transition: background-color 0.4s ease;
 }
 

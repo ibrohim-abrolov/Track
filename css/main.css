@@ -407,7 +407,7 @@ img {
 }
 
 .nav__link:hover {
-  opacity: 0.6;
+  color: #dbf301;
 }
 
 .site-header__link {
@@ -602,7 +602,7 @@ img {
   background-color: rgba(255, 255, 255, 0.85);
   box-shadow: 0px 5px 36px 0px rgba(0, 0, 0, 0.12);
   -webkit-backdrop-filter: blur(9.5px);
-          backdrop-filter: blur(9.5px);
+  backdrop-filter: blur(9.5px);
   border-radius: 19px;
   transform: rotate(2.183deg);
 }
@@ -906,4 +906,58 @@ img {
 .price__link:hover {
   background-color: #fff;
   color: #485aff;
+}
+
+.site-footer {
+  padding-top: 108px;
+  padding-bottom: 39px;
+  background-color: #110d33;
+}
+
+.site-footer__wrapper {
+  padding-bottom: 99px;
+  border-bottom: 1px solid #464c56;
+}
+
+.site-footer__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.site-footer__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.site-footer__items:not(:last-child) {
+  margin-right: 100px;
+}
+
+.site-footer__link {
+  line-height: 24px;
+  font-weight: 500;
+  color: #f4f4f5;
+  text-decoration-line: none;
+  transition: color 0.4s ease;
+}
+
+.site-footer__link:hover {
+  color: #dbf301;
+}
+
+.site-footer__main-link {
+  display: block;
+  padding-top: 39px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #cdb5e1;
+  text-align: center;
+  text-decoration-line: none;
 }/*# sourceMappingURL=main.css.map */

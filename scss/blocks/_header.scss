@@ -22,19 +22,25 @@
     line-height: var(--main-line-height);
     font-weight: 500;
     color: var(--main-text-color);
-    text-decoration-line: none;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+    -webkit-transition: color 0.4s ease;
+    -o-transition: color 0.4s ease;
     transition: color 0.4s ease;
 }
 
 .nav__link:hover {
-    opacity: 0.6;
+    color: #dbf301;
 }
 
 .site-header__link {
     line-height: var(--main-line-height);
     font-weight: 500;
     color: var(--main-text-color);
-    text-decoration-line: none;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+    -webkit-transition: color 0.4s ease;
+    -o-transition: color 0.4s ease;
     transition: color 0.4s ease;
 }
 

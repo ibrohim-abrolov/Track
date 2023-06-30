@@ -16,7 +16,8 @@
 
 .service__list {
     @include mixins.flexbox(row, center, space-between);
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     @include mixins.list-reset;
 }
 
